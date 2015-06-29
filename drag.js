@@ -5,7 +5,10 @@ var disX=0;
     obj.onmousedown=function  (ev){
 ¡¡¡¡disX=ev.pageX-obj.offsetLeft;
         dis£Ù=ev.page£Ù-obj.offsetTop;
-
+document.onmousemove=function(){
+    obj.style.left=ev.pageX-disX+'px';
+    obj.style.top=ev.pageY-disY+'px';
+};
 
 
     };
